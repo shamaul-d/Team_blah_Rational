@@ -116,7 +116,7 @@ public class Rational {
     public boolean equals(Object val){
 	if(val instanceof Rational){
 	    Rational ra=(Rational)val;
-	    return compareTo(ra);
+	    return (0 == compareTo(ra));
 	}
 	else return false;
     }
