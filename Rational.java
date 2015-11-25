@@ -1,4 +1,4 @@
-// Team soundsLikeAEuphemism -- Shanjeed Ali, Shamaul Dilmohamed
+// Team Blah -- Shanjeed Ali, Shamaul Dilmohamed
 // APCS1 pd10
 // HW37 -- Rational Equality
 // 2015-11-25
