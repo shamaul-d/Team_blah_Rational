@@ -104,8 +104,8 @@ public class Rational {
     
 
     public int compareTo(Rational o){
-	double there = o.floatValue();
-	double here = floatValue();
+	int here = numer * o.denom;
+	int there = denom * o.numer;
 	if (here == there) {return 0;}
 	else if (there > here) {return -1;}
 	else return 1;
@@ -116,11 +116,9 @@ public class Rational {
     public boolean equals(Object val){
 	if(val instanceof Rational){
 	    Rational ra=(Rational)val;
-	    return (numer*ra.denom)==(denom*ra.numer);
+	    return compareTo(ra);
 	}
-	else{
-	    return false;
-	}
+	else return false;
     }
     
     public static void main(String[] args){
