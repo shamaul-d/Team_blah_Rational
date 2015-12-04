@@ -1,7 +1,7 @@
 // Team Blah -- Shanjeed Ali, Shamaul Dilmohamed
 // APCS1 pd10
-// HW37 -- Rational Equality
-// 2015-11-25
+// HW41 -- In America, the Driver Sits on the Left
+// 2015-12-04
 public class Rational implements Comparable {
    
     private int numer;
