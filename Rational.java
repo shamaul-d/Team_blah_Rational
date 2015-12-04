@@ -104,7 +104,7 @@ public class Rational implements Comparable {
     
     //determines equality or inequality using cross-multipication
     public int compareTo(Object o){
-	Rational r=(Rational)o;
+	Rational r=(Rational)o; //typecasts the object as an instance of Rational
 	int here = numer * r.denom;
 	int there = denom * r.numer;
 	if (here == there) {return 0;}
