@@ -102,17 +102,17 @@ public class Rational implements Comparable {
 	return gcd(b % a, a); // Recursion: Euclidean Algorithm on (remainder, smaller)
     }
     
-
-    public int compareTo(Rational o){
-	int here = numer * o.denom;
-	int there = denom * o.numer;
+    //determines equality or inequality using cross-multipication
+    public int compareTo(Object o){
+	Rational r=(Rational)o;
+	int here = numer * r.denom;
+	int there = denom * r.numer;
 	if (here == there) {return 0;}
 	else if (there > here) {return -1;}
 	else return 1;
 	
     }
     
-    // uses cross multiplication to determine equality
     public boolean equals(Object val){
 	if(val instanceof Rational){
 	    Rational ra=(Rational)val;
