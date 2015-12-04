@@ -110,7 +110,6 @@ public class Rational implements Comparable {
 	if (here == there) {return 0;}
 	else if (there > here) {return -1;}
 	else return 1;
-	
     }
     
     public boolean equals(Object val){
