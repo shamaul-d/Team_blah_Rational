@@ -2,7 +2,7 @@
 // APCS1 pd10
 // HW37 -- Rational Equality
 // 2015-11-25
-public class Rational {
+public class Rational implements Comparable {
    
     private int numer;
     private int denom;
